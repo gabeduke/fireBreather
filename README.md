@@ -1,36 +1,21 @@
 INTRODUCTION
 ------------
 
-wioLeet gathers sensor data from any wioLinks or wioNodes and exports the data to ThingSpeak and Initial State
-
-
-REQUIREMENTS
-------------
-
-This module requires the following modules:
-
- * Python version: 2.7
- * Python packages: enum, ISStreamer, smtplib
- * `sudo pip install --upgrade google-api-python-client`
- 
+fireBreather gathers sensor data from the thermostat sensor and enables or disables the fan control relay according to the user defined thresholds
 
 INSTALLATION
 ------------
+
+ # (Optional) First install a virtual python env to keep separate from main python installation
+ 
+```bash
+git clone https://github.com/gabeduke/fireBreather.git
+cd firebreather
+[sudo] pip install virtualenv
+virtualenv venv
+source venv/bin/activate
+```
  
  * in root dir run `python setup.py install`
-
- * run `python configure.py` to set run params
  
- * run `python app/run.py` to run the service
- 
- * Setup cron: 
-```bash
-crontab -u [user] -e << '* * * * * [user] /usr/bin/python /pathToApp/run.py >> /var/log/wioLeet.log
-sudo chown /var/log/wioLeet.log
-```
-
-
-PACKAGING
----------
- 
- * in root dir run `python setup.py sdist`
+ * run `python fireBreather.py` to run the service

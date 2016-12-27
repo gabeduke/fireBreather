@@ -2,10 +2,10 @@ from setuptools import setup
 
 setup(
     # Application name:
-    name="wioLeet",
+    name="fireBreather",
 
     # Version number (initial):
-    version="0.1.1",
+    version="0.0.1",
 
     # Application author details:
     author="dukeman",
@@ -18,7 +18,7 @@ setup(
     include_package_data=True,
 
     # Details
-     url="http://pypi.python.org/pypi/wioLeet_v011/",
+     url="http://pypi.python.org/pypi/fireBreather_v001/",
 
     #
     # license="LICENSE.txt",
@@ -28,7 +28,7 @@ setup(
 
     # Dependent packages (distributions)
     install_requires=[
-        "enum34", "ISStreamer", "httplib2", "google-api-python-client"
+        "enum34", "ISStreamer", "httplib2", 'requests'
 
     ],
 )
