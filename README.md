@@ -6,6 +6,14 @@ fireBreather gathers sensor data from the thermostat sensor and enables or disab
 INSTALLATION
 ------------
 
+ * Python dependencies
+
+```bash
+sudo apt-get install python-pip python-dev build-essential 
+sudo pip install --upgrade pip 
+sudo pip install --upgrade virtualenv 
+```
+
  * Clone the repository
  
 ```bash
